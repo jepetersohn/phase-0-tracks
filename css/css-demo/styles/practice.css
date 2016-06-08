@@ -1,0 +1,26 @@
+#contact-info {
+	font-size: .8em;
+}
+.job {
+	background-color: #e9e5dc;
+	padding-top: 10px;
+	padding-right:10px;
+	padding-left: 10px;
+	margin-top: 1cm;
+	border-radius: 10px;
+	padding: 20px;
+	width: 420px;
+	height: 150px;
+}
+
+.smallfont {
+	font-size: .8em;
+}
+
+p:first-child {
+    color: blue;
+}
+
+#volunteer-experience ul {
+	color: green;
+}
