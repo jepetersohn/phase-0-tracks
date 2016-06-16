@@ -1,0 +1,55 @@
+- Approach door of elevator.
+	- Locate the buttons next to the elevator door: One labeled with an upward facing arrow and one labeled with a downward facing arrow.
+	- If you want to go to a higher numbered floor than the one you're currently on, use your finger to press the button labeled with an upward facing arrow.
+		- Press the button only one time.
+	- If you want to go to a lower numbered floor than the one you're currently on, use your finger to press the button with the downward facing arrow.
+		- Press the button only one time.
+- Wait for the elevator door to open.
+- When the elevator door opens, enter the elevator through the open door by walking forwards.
+- Once you're inside of the elevator, stop walking.
+	- Look to the right and the left of the door.
+	- Locate the buttons labeled with numbers.
+	- Use your finger to press the button labeled with the number corresponding to the floor you'd like to go to.
+	- Press the button only one time.
+- The elevator will then take you to that floor.
+- When the elevator stops moving
+	- Locate the number above the door of the elevator to verify that the elevator has brought you to the floor corresponding to the button that you pushed.
+	- If the number is different than the number on the button that you pushed, continue to wait on the elevator until the number above the door corresponds to the number that was on the button that you pressed.
+- When the number above the door corresponds to the number on the button that you pressed
+	- Wait for the elevator door to open
+	- Exit the elevator by walking forwards through the open door. 
+
+
+TASK: Fill the cat's water dish
+
+- Enter kitchen by walking forward through the kitchen archway.
+- Located the two small bowls on the floor (one red, one blue), 12 inches to the left of the kitchen archway.
+- Walk to the bowls by walking forwards towards them.
+- Stop walking when you reach the bowls. 
+- Tilt head down by bending neck.
+	- Observe whether the red bowl is empty.
+	- If red bowl has water in it, do nothing to the red bowl.
+	- If red bowl does not have water in it:
+		- Bend down at the waist.
+		- Extend right arm down towards red bowl.
+		- Grasp red bowl by enclosing your fingers around it.
+		- Pick red bowl up off of the ground by straightening your body at the waist.
+			- Do not turn the bowl upside down. 
+		- Walk two feet to the right.
+		- Stop when you get to the sink.
+		- Extend your left hand towards the faucet.
+		- Grasp the faucet-handle with your left hand.
+		- Turn the faucet-spigot on by lifting your left hand upwards while continuing to grasp the faucet-handle.
+			- Water should begin to come out of the faucet-spigot.
+				- If no water comes out, see instructions for "Calling the water company"
+			- Move your right arm until the bowl that you're carrying in your right hand is underneith the running water.
+				- The bowl should be filling up with water.
+			- When the water reaches the rim of the bowl:
+				- Turn the faucet-spigot off by moving your left hand downward while still grasping the faucet-handle.
+				- Let go of the faucet-handle by loosening the fingers on your left hand.
+			- Turn around.
+			- Walk two feed to the left.
+			- Bend down at the waist.
+			- Slowly extend right arm (still holding bowl) down towards the floor.
+			- When bottom of red bowl touches the floor, let go of the bowl by loosening the fingers on your right hand. 
+			- Return to standing position by straightening body at the waist. 
