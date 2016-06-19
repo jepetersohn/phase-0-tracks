@@ -1,6 +1,9 @@
 #ask the user how many employees will be processed
 puts "How many employees will be processed?"
-number_of_employees = gets.chomp
+number_of_employees = gets.chomp.to_i
+
+until number_of_employees == 0 
+number_of_employees -= 1 
 
 #ask the employee what their name is
 puts "What is your name?"
@@ -66,5 +69,5 @@ if name == "Drake Cula" or name == "Tu Fang"
 end 
 
 puts vampire_decision 
-
+end 
 puts  "Actually, never mind! What do these questions have to do with anything? Let's all be friends."	
