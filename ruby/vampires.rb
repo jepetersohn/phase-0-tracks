@@ -46,7 +46,7 @@ if  age && (garlic_bread || health_insurance)
 	vampire_decision = "Probably not a vampire"
 end
 
-if !age && !(garlic_bread || health_insurance)
+if !age && (!garlic_bread || !health_insurance)
 	vampire_decision = "Probably a vampire"
 end
 
