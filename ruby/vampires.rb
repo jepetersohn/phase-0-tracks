@@ -1,3 +1,7 @@
+#ask the user how many employees will be processed
+puts "How many employees will be processed?"
+number_of_employees = gets.chomp
+
 #ask the employee what their name is
 puts "What is your name?"
 name=gets.chomp
