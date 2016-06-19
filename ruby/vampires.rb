@@ -68,6 +68,18 @@ if name == "Drake Cula" or name == "Tu Fang"
 
 end 
 
+#ask employee to list their allergies
+puts "Do you have any allergies?"
+allergy_response = gets.chomp
+if allergy_response == "yes"
+puts "Type in an allergy that you have. When you're done, please type 'done'"
+allergy_list = gets.chomp 
+end 
+
+if allergy_list == "sunshine"
+	vampire_decision = "Definitely a vampire"
+end
+
 puts vampire_decision 
 end 
-puts  "Actually, never mind! What do these questions have to do with anything? Let's all be friends."	
+puts  "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
