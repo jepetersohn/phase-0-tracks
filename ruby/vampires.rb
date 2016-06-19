@@ -54,5 +54,9 @@ if !age && !garlic_bread && !health_insurance
 	vampire_decision = "Almost certainly a vampire."
 end
 
-puts vampire_decision
+if name == "Drake Cula" or name == "Tu Fang"
+	vampire_decision = "Definitely a vampire"
+end 
 
+	
+puts vampire_decision
