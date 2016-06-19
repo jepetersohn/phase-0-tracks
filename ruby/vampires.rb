@@ -14,8 +14,31 @@ garlic_bread=gets.chomp
 puts "Would you like to enroll in the company's health insurance, #{name}?"
 health_insurance = gets.chomp
 
-if (current_year.to_i - year_born.to_i) == age.to_i && garlic_bread=="yes" 
-	puts "Probably not a vampire"
+if garlic_bread.include? "yes"
+	garlic_bread = true
 else 
-	puts "Results inconclusive"
+	garlic_bread = false
+end
+
+if health_insurance.include? "yes"
+	health_insurance = true
+else
+	health_insurance = false
 end 
+
+#see if age is correct 
+if (age.to_i == (current_year.to_i - year_born.to_i)) || ((age.to_i + 1) == (current_year.to_i - year_born.to_i))
+	age = true
+else 
+	age = false
+end
+	
+if  age && (garlic_bread || health_insurance)
+	vampire_decision = "Probably not a vampire"
+	puts vampire_decision
+	else
+	vampire_decision = "Results inconclusive"
+end
+
+
+p vampire_decision 
