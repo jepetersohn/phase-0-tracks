@@ -72,12 +72,16 @@ end
 puts "Do you have any allergies?"
 allergy_response = gets.chomp
 if allergy_response == "yes"
-puts "Type in an allergy that you have. When you're done, please type 'done'"
+puts "Type in an allergy that you have."
 allergy_list = gets.chomp 
 end 
 
+until allergy_list == "done" or allergy_list == "sunshine"
+puts "Any others? When you're done, please type 'done'."
+allergy_list = gets.chomp
 if allergy_list == "sunshine"
 	vampire_decision = "Definitely a vampire"
+end 
 end
 
 puts vampire_decision 
