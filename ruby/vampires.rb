@@ -40,7 +40,7 @@ else
 	health_insurance = false
 end 
 
-
+vampire_decision = "Results inconclusive"
 	
 if  age && (garlic_bread || health_insurance)
 	vampire_decision = "Probably not a vampire"
@@ -48,15 +48,19 @@ end
 
 if !age && (!garlic_bread || !health_insurance)
 	vampire_decision = "Probably a vampire"
+	
 end
 
 if !age && !garlic_bread && !health_insurance
-	vampire_decision = "Almost certainly a vampire."
+	vampire_decision = "Almost certainly a vampire"
+
 end
 
 if name == "Drake Cula" or name == "Tu Fang"
 	vampire_decision = "Definitely a vampire"
+
 end 
 
+puts vampire_decision 
+
 	
-puts vampire_decision
