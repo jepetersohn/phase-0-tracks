@@ -1,3 +1,4 @@
+#create client survey
 client_survey = {
 	name: " ", 
 	age: " ",  
@@ -7,6 +8,8 @@ client_survey = {
 	likes_vaulted_ceilings: " ", 
 }
 
+#ask for user to input the data to fill in the client survey
+#continue asking for each item until all are complete
 puts "What is the client's full name?"
 
 client_survey[:name] = gets.chomp.to_s
@@ -31,6 +34,7 @@ puts "I did not understand your answer. Please enter 'yes' or 'no.'"
 client_survey[:likes_carpeting] = gets.chomp
 end
 
+#change carpeting to a boolean
 if client_survey[:likes_carpeting] == "yes"
 	client_survey[:likes_carpeting] = true
 elsif client_survey[:likes_carpeting] == "no"
@@ -46,14 +50,17 @@ puts "I did not understand your answer. Please enter 'yes' or 'no.'"
 client_survey[:likes_vaulted_ceilings] = gets.chomp
 end
 
+#change vaulted ceilings to a boolean
 if client_survey[:likes_vaulted_ceilings] == "yes"
 	client_survey[:likes_vaulted_ceilings] = true
 elsif client_survey[:likes_vaulted_ceilings] == "no"
 	client_survey[:likes_vaulted_ceilings] = false
 end
 
+#print the client survey
 puts client_survey
 
+#ask if they want to make any changes to the client survey
 puts "Do you want to make any changes? (yes or no)"
 
 changes = gets.chomp
@@ -63,6 +70,7 @@ puts "I did not understand your answer. Please enter 'yes' or 'no.'"
 changes = gets.chomp
 end
 
+#let them make changes to the survey item of their choice
 if changes == "yes"
 	puts "Would you like to change 'name', 'age', 'number_of_children', 'decor_theme', 'likes_carpeting', or 'likes_vaulted_ceilings'?"
 	type_of_change = gets.chomp
@@ -117,6 +125,7 @@ if client_survey[:likes_carpeting] == "yes"
 elsif client_survey[:likes_carpeting] == "no"
 	client_survey[:likes_carpeting] = false
 end
+
+#print the updated client survey
 puts client_survey
 
-puts client_survey
