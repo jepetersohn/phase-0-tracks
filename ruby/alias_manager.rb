@@ -10,21 +10,21 @@ puts "I did not understand you, please answer 'yes' or 'no'."
 	answer = gets.chomp.downcase
 end
 
-
 if answer == "no" 
 	puts "Have a nice day."
+	
 elsif answer == "yes"
 	puts "What is your first name?"
 	name[:first_name] = gets.chomp.downcase
 
 	puts "What is your last name?"
 	name [:last_name] = gets.chomp.downcase
-end
-puts name 
+	puts name 
 
-
+puts " "
 puts "Do you have another name you'd like to have an alias generated for? Please answer 'yes' or 'no'."
 answer = gets.chomp.downcase
+end
 
 until answer == "yes"|| answer == "no" || answer == "quit"
 puts "I did not understand you, please answer 'yes' or 'no'."
@@ -38,5 +38,5 @@ elsif answer == "yes"
 
 	puts "What is your last name?"
 	name [:last_name] = gets.chomp.downcase
+	puts name
 end
-
