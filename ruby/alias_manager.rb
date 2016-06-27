@@ -1,11 +1,13 @@
-
+#create an empty hash
 alias_list = {}
-
+#create an empty array
+name = []
+#define vowels
 vowels = "aeiou".chars
+#define consonants
 
 consonants = "bcdfghjklmnpqrstvwxyz".chars
 
- 
 
 #ask the user for their name and change it to lower case
 
@@ -25,11 +27,15 @@ if answer == "no" || answer == "quit"
 elsif answer == "yes"
 	puts "What is your name?"
 	name = gets.chomp.downcase
-name_split = name.split(' ')
-	puts name_split.reverse 
+#swap their first and last name
+name_split = name.split
+	new_name = name_split.reverse.to_s 
+#add the swapped name into the array
+	name << new_name
+puts name  
 end 
 puts " "
-
+#create a loop until they put 'quit'
 until answer == "no" || answer == "quit"
 puts "Do you have another name you'd like to have an alias generated for? Please answer 'yes' or 'no', or type 'quit' to exit."
 answer = gets.chomp.downcase
@@ -44,8 +50,11 @@ elsif answer == "yes"
 	puts "What is your name?"
 	name = gets.chomp.downcase
 
-name_split = name.split(' ')
-	puts name_split 
+name_split = name.split
+	new_name = name_split.reverse.to_s 
+
+	name << new_name
+puts name  
 end
 	
 end 
