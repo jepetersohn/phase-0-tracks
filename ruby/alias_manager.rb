@@ -1,7 +1,7 @@
+
 alias_list = {}
 
 vowels = "aeiou".chars
-puts vowels
 
 consonants = "bcdfghjklmnpqrstvwxyz".chars
 
@@ -26,9 +26,7 @@ elsif answer == "yes"
 	puts "What is your name?"
 	name = gets.chomp.downcase
 name_split = name.split(' ')
-
-
-	puts name_split 
+	puts name_split.reverse 
 end 
 puts " "
 
@@ -51,6 +49,5 @@ name_split = name.split(' ')
 end
 	
 end 
-
 
 
