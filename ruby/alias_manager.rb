@@ -1,7 +1,10 @@
 #create an empty hash
-alias_list = {}
-#create an empty array
-name = []
+alias_list = {
+	real_name:"" ,
+	alias_name:"" ,
+	
+}
+
 #define vowels
 vowels = "aeiou".chars
 #define consonants
@@ -30,9 +33,11 @@ elsif answer == "yes"
 #swap their first and last name
 name_split = name.split
 	new_name = name_split.reverse.to_s 
-#add the swapped name into the array
-	name << new_name
-puts name  
+#add the swapped name into the hash
+	
+	alias_list[:real_name] = name
+	alias_list[:alias_name] = new_name
+puts new_name  
 end 
 puts " "
 #create a loop until they put 'quit'
@@ -49,14 +54,15 @@ if answer == "no" || answer == "quit"
 elsif answer == "yes"
 	puts "What is your name?"
 	name = gets.chomp.downcase
-
+	
 name_split = name.split
 	new_name = name_split.reverse.to_s 
+	alias_list[:real_name] = name
+	alias_list[:alias_name] = new_name
+puts new_name  
 
-	name << new_name
-puts name  
 end
 	
 end 
 
-
+puts alias_list
