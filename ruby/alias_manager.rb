@@ -1,4 +1,3 @@
-
 alias_list = {}
 
 vowels = "aeiou".chars
@@ -9,7 +8,7 @@ consonants = "bcdfghjklmnpqrstvwxyz".chars
  
 
 #ask the user for their name and change it to lower case
-name = {first_name: " ", last_name: " "}
+
 puts "Welcome to the alias generator. Input some names one at a time, and an alias will be generated for you. When you're done, type 'quit'."
 puts ' '
 puts "Do you have a name you'd like to have an alias generated for? Please enter 'yes' or 'no'."
@@ -26,8 +25,10 @@ if answer == "no" || answer == "quit"
 elsif answer == "yes"
 	puts "What is your name?"
 	name = gets.chomp.downcase
+name_split = name.split(' ')
 
-	puts name 
+
+	puts name_split 
 end 
 puts " "
 
@@ -44,6 +45,12 @@ if answer == "no" || answer == "quit"
 elsif answer == "yes"
 	puts "What is your name?"
 	name = gets.chomp.downcase
+
+name_split = name.split(' ')
+	puts name_split 
 end
-	puts name
+	
 end 
+
+
+
