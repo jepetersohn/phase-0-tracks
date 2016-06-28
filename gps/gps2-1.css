@@ -1,0 +1,33 @@
+header {
+  background-image: url("http://images.clipartpanda.com/smiley-face-clip-art-RcGG8gecL.jpeg"); 
+  font-size: x-large;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.column-1 {
+  postion: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 325px;
+  border-style: solid;
+  background-color: red;
+  margin: 5px;
+  padding: 5px;
+  color: blue;
+}
+
+.column-2 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 325px;
+  border-style: solid;
+  margin: 5px;
+  padding: 5px;
+  color: red;
+  background-color: blue;
+}
+
+footer {
+  text-align: center;
+}
