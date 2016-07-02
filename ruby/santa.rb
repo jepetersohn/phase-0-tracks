@@ -27,3 +27,10 @@ end
 fatman = Santa.new("male", "ethiopian") 
 fatman.speak 
 fatman.eat_milk_and_cookies("oatmeal")
+
+santas = []
+santas << Santa.new("male", "Ethiopian")
+santas << Santa.new("female", "Chinese")
+santas << Santa.new("prefer not to say", "Indian")
+santas << Santa.new("female", "Thai")
+p santas 
