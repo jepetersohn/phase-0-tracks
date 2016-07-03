@@ -51,30 +51,37 @@ end
 
 puts "Would you like to generate a new preschooler instance? yes or no?"
 answer = gets.chomp
+
+
+until answer == "yes" || answer == "no"
+	puts "I did not understand you. Please enter yes or no."
+	answer = gets.chomp
+end 
+
 if answer == "yes"
 	child = Preschooler.new 
 elsif answer == "no"
 	puts "Have a nice day."
-else 
-	puts "I did not understand you. Please enter yes or no."
 end 
 
+until answer == "no"
 puts "What is the preschooler's name?"
 @name = gets.chomp.capitalize
 puts "Name: #{@name}"
 
 puts "What is the #{@name}'s gender?"
-@gender = gets.chomp
+@gender = gets.chomp.capitalize
 puts "Gender: #{@gender}"
 
 puts "From their point of view, why would they say they are upset?"
-@thing_upset_about = gets.chomp
+@thing_upset_about = gets.chomp.capitalize
 child.tantrum(@thing_upset_about)
 
 puts "What did #{@name} pour nail-polish on?"
 @the_item = gets.chomp.downcase
 child.make_a_mess(@the_item)
 
+end 
 
 #driver code
 
