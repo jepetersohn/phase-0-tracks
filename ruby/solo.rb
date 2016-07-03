@@ -48,59 +48,25 @@ class Preschooler
 end
 
 #user interface
+puts "How many preschoolers would you like to input?"
+number = gets.chomp.to_i 
 
-puts "Would you like to generate a new preschooler instance? yes or no?"
-answer = gets.chomp
+while number > 0 
+	puts "What is the preschooler's name?"
+	@name = gets.chomp.capitalize
 
-
-until answer == "yes" || answer == "no"
-	puts "I did not understand you. Please enter yes or no."
-	answer = gets.chomp
-end 
-
-if answer == "yes"
 	child = Preschooler.new 
-elsif answer == "no"
-	puts "Have a nice day."
-end 
-
-until answer == "no"
-puts "What is the preschooler's name?"
-@name = gets.chomp.capitalize
-puts "Name: #{@name}"
-
-puts "What is the #{@name}'s gender?"
-@gender = gets.chomp.capitalize
-puts "Gender: #{@gender}"
-
-puts "From their point of view, why would they say they are upset?"
-@thing_upset_about = gets.chomp.capitalize
-child.tantrum(@thing_upset_about)
-
-puts "What did #{@name} pour nail-polish on?"
-@the_item = gets.chomp.downcase
-child.make_a_mess(@the_item)
-
-end 
-
-#driver code
-
-#child = Preschooler.new 
-#child.name("Jimmy")
-#child.gender("boy")
-#child.tantrum("I wanted a blue apple, not a red apple")
-#child.make_a_mess("the dog")
-#child.sleep 
-
-#puts child.name = "Bobby"
-#puts child.age 
-#child.gender("boy")
-#child.tantrum("I wanted to eat my soup with a knife, not a spoon!")
-#child.make_a_mess("the couch")
-#child.sleep 
-
-#child = Preschooler.new
-#child.name("Sarah")
-#child.gender("female")
+	puts "Name: #{@name}"
+	puts "What is #{@name}'s gender?"
+	@gender = gets.chomp.capitalize
+	puts "Gender: #{@gender}"
+	puts "From their point of view, why would they say they are upset?"
+	@thing_upset_about = gets.chomp.capitalize
+	child.tantrum(@thing_upset_about)
+	puts "What did #{@name} pour nail-polish on?"
+	@the_item = gets.chomp.downcase
+	child.make_a_mess(@the_item)
 
 
+number = number - 1 
+end
