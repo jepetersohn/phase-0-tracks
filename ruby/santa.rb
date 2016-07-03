@@ -4,14 +4,8 @@ class Santa
   		puts "Initializing Santa instance ..."
   		@gender = gender
   		@ethnicity = ethnicity
- 	end 
-
-	def reindeer_ranking
-		ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-	end 
-	
-	def age 
-		@age = 0
+ 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+ 		@age = 0 
 	end 
 	
 	def speak
@@ -22,6 +16,28 @@ class Santa
 		puts "That was a good #{cookie_type} cookie!"
 	end 
 
+	def celebrate_birthday
+		@age += 1
+	end
+	
+	def get_mad_at(reindeer)
+		@reindeer_ranking.delete(reindeer.capitalize)
+		@reindeer_ranking.push(reindeer.capitalize)
+		p @reindeer_ranking
+	end
+	
+	def gender=(new_gender)
+		@gender = new_gender
+	end 
+	
+	def age
+		@age
+	end
+	
+	def ethnicity
+		@ethnicity
+	end 
+	
 end 
 
 fatman = Santa.new("male", "ethiopian") 
@@ -34,3 +50,11 @@ santas << Santa.new("female", "Chinese")
 santas << Santa.new("prefer not to say", "Indian")
 santas << Santa.new("female", "Thai")
 p santas 
+
+fatman.get_mad_at("rudolph")
+fatman.get_mad_at("dancer")
+fatman.gender=("female")
+puts fatman.age 
+fatman.celebrate_birthday
+puts fatman.age 
+puts fatman.ethnicity 
