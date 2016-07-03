@@ -1,11 +1,14 @@
 class Santa 
 	
+	attr_reader :age, :ethnicity 
+	attr_accessor :gender
+	
 	def initialize(gender, ethnicity)
   		puts "Initializing Santa instance ..."
   		@gender = gender
   		@ethnicity = ethnicity
  		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
- 		@age = 0 
+ 		@age = rand(0-140) 
 	end 
 	
 	def speak
@@ -25,20 +28,12 @@ class Santa
 		@reindeer_ranking.push(reindeer.capitalize)
 		p @reindeer_ranking
 	end
-	
-	def gender=(new_gender)
-		@gender = new_gender
-	end 
-	
-	def age
-		@age
-	end
-	
-	def ethnicity
-		@ethnicity
-	end 
+
 	
 end 
+
+
+#driver code
 
 fatman = Santa.new("male", "ethiopian") 
 fatman.speak 
@@ -58,3 +53,18 @@ puts fatman.age
 fatman.celebrate_birthday
 puts fatman.age 
 puts fatman.ethnicity 
+
+genders = ["agender", "bigender", "male", "female", "gender fluid", "N/A", "prefer not to say", "ambiguous"]
+ethnicities = ["black", "Hispanic", "white", "Ethiopian", "prefer not to say", "Feline", "Canine", "invisble", "Chinese"]
+
+#generate 50 random Santas
+
+santas = []
+50.times do |i|
+	santas.push(Santa)
+	fatman = Santa.new(genders.sample, ethnicities.sample)
+	puts "#{fatman.speak} This Santa is #{fatman.age} years old, #{fatman.gender}, and #{fatman.ethnicity}."
+end 
+
+
+
