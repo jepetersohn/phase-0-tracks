@@ -50,7 +50,6 @@ class VirusPredictor
     # by additional factors we haven't added into this functionality.
     speed = 0.0
 
-    when @population_density(151..200)
 
     if @population_density >= 200
       speed += 0.5
