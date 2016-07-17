@@ -4,9 +4,23 @@
 //so the last letter would become the first letter
 //return the reversed string
 
-var str = "hi!"
 
+function reverse(string) {
+ var reverseString = ""
+ for (var i = string.length - 1; i >= 0; i --)
+ reverseString += string[i];
+ console.log(reverseString);
+ return reverseString;
+}
 
-for (var i = str.length - 1; i >= 0; i--) {
-	console.log(str[i]);
+reverse("hello")
+
+//set the reversed string to a variable
+
+var backwards = reverse("my first javascript function!!!");
+
+//driver code to print if a condition is true
+
+if (5>3) {
+ console.log(backwards);
 }
