@@ -1,3 +1,11 @@
+// I completed the pseudocoding, but did not get time to finish the actual coding. I'm submitting this prior to completion because week 8 
+// won't unlock until this is submitted, and I don't want to fall too far behind overall. I ran out of time for this assignment within
+// week 7 due to spending the majority of my time studying for the assessment. 
+// I will continue to work on this throughout the week so that I may develop these skills. 
+
+
+// PSEUDOCODE
+
 // determine the length of every object within an array 
 // compare the lengths of those objects
 // return the item of the array with the longest length
