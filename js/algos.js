@@ -10,7 +10,18 @@
 // compare the lengths of those objects
 // return the item of the array with the longest length
 
+function longestString(array) {
+ var longestObject = '';
+ for (var i = 0; i < array.length; i++) {
+  if (array[i].length > longestObject.length) {
+   longestObject = array[i]
+  }
+ }
+  console.log(longestObject)
+}
 
+arrayTest = ["try this", "how about this?", "or perhaps this is it?", "hi"]
+longestString(arrayTest)
 
 // separate the objects of the hash into individual items 
 // compare the items from each hash to see if any of them are the same
