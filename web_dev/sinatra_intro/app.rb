@@ -10,7 +10,21 @@ db.results_as_hash = true
 # GET /
 get '/' do
   "#{params[:name]} is #{params[:age]} years old."
+  
 end
+
+get '/great_job' do
+	name = params[:name]
+  if name 
+  	"Good job, #{params[:name]}."
+  else
+  	"Good job."
+  end
+ end
+
+ get '/contact' do 
+ 	"The Red House <br>444 W. Yellow St. <br>Bluestown, IL 60115"
+ end 
 
 # write a GET route with
 # route parameters
@@ -19,9 +33,13 @@ get '/about/:person' do
   "#{person} is a programmer, and #{person} is learning Sinatra."
 end
 
-get '/:person_1/loves/:person_2' do
-  "#{params[:person_1]} loves #{params[:person_2]}"
+get '/calculate/:number_1/+/:number_2'do
+	number1 = params[:number_1].to_i
+	number2 = params[:number_2].to_i
+	answer = number1 + number2 
+	answer.to_s
 end
+
 
 # write a GET route that retrieves
 # all student data
